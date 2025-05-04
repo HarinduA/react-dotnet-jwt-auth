@@ -1,4 +1,4 @@
-# React + ASP.NET Core JWT Authentication (POC)
+# React + ASP.NET Core JWT Authentication 
 
 This is a proof-of-concept (POC) application demonstrating how to implement secure user authentication using **React.js** (frontend) and **ASP.NET Core Web API** (backend) with **JWT (JSON Web Tokens)**. The app includes **role-based access control** and token handling without using a database.
 
