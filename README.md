@@ -30,3 +30,6 @@ This is a proof-of-concept (POC) application demonstrating how to implement secu
 ```bash
 git clone https://github.com/yourusername/react-dotnet-jwt-auth-poc.git
 cd react-dotnet-jwt-auth-poc
+
+dependencies
+npm install
