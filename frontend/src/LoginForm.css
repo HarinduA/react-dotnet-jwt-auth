@@ -1,0 +1,126 @@
+/* LoginForm.css */
+
+/* Ensure the body takes up full height of the viewport and centers the form */
+.login-form body {
+  background: linear-gradient(135deg, #6e7e85, #c2d1d9);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100vh; /* Ensure the body takes up the full viewport height */
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  align-items: center; /* Vertically center the container */
+}
+
+/* Centering the login form container */
+.login-form .container {
+  width: 100%;
+  max-width: 420px; /* Set a max width for the form */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+  /* Ensure the container takes at least 100% of the available height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Other styles remain the same */
+.login-form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  text-align: left;
+}
+
+.login-form input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #5c6bc0;
+  box-shadow: 0 0 8px rgba(92, 107, 192, 0.5);
+}
+
+.login-form button {
+  padding: 14px;
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.login-form button:hover {
+  background-color: #3f51b5;
+  transform: scale(1.05);
+}
+
+.login-form p {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-form .success-message {
+  margin-top: 20px;
+  background-color: #e0f7e0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.login-form .forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5c6bc0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-form .forgot-password:hover {
+  color: #3f51b5;
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-form .container {
+  animation: fadeIn 1s ease-in;
+}
